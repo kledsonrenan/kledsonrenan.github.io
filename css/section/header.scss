@@ -1,0 +1,25 @@
+.header {
+	background-image: $background-img;
+	justify-content: center;
+	align-content: center;
+	
+	@media (max-width: 768px) {
+		padding: 10px;
+	}
+
+	.img-circle {
+		border-radius: 50%;
+		width: 180px;
+		height: 180px;
+		margin: 0 35% 0 0;
+		z-index: 9999;
+
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+}
+.ribbon {
+	background-image: $background-img;
+	opacity: 0.9;
+}

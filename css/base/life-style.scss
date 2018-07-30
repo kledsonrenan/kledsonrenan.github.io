@@ -1,0 +1,190 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+body {
+	background-color: $plano-fundo;
+}
+em, i, strong, b {
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+.ark {
+	box-shadow: 0 1px 4px 0 rgba(0,0,0,0.27);
+	padding: 100px 0;
+	background-color: #F2EFF4;
+	margin-bottom: 0;
+	border-radius: 0;
+	background-clip: padding-box;
+	display: block;
+	width: 100%;
+	max-width: 100%;
+}
+.content-15 {
+	width: 85%;
+	margin: 0 auto;
+}
+.flex {
+	display: flex;
+}
+.flex-column {
+	flex-direction: column;
+}
+/*******************\*
+	FOOTER
+\*******************/
+.footer {
+	display: flex;
+	align-items: center;
+	max-width: 100%;
+	width: 100%;
+	min-height: 100px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	background-color: $background-footer;
+
+	.author {
+		color: #BBB;
+	}
+
+	a:link {
+		text-decoration: none;
+	}
+} 
+/*******************\*
+	HEADER
+\*******************/
+.header {
+	display: flex;
+	max-width: 100%;
+	width: 100%;
+	background-color: #100219;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	height: 350px;
+	color: #d9bbf9;
+	padding: 2% 0;
+	clear: both;
+}
+.parallax {
+    min-height: 700px;
+    height: auto;
+
+    padding: 100px 0;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ribbon {
+	display: flex;
+	height: 60px;
+	width: 100%;
+	max-width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #683089FF;
+
+	@media (max-width: 768px) {
+		position: absolute;
+		top: 0;
+	}
+
+	.ribbon-list {
+		display: inline-block;
+		margin: 0 auto;
+		list-style: none;
+		padding-left: 0;
+
+		.ribbon-item {
+			margin-right: 30px;
+			display: inline-block;
+			background: none;
+			text-transform: uppercase;
+
+			a {
+				&:link {
+					text-decoration: none;
+					color: #D9BBF9;
+					font-weight: 600;
+				}
+				&:visited, &:active {
+					color: #D9BBF9;
+				}
+				&:hover {
+					color:  #F1ECF4;
+					font-weight: 700;
+					transition: color .3s;
+				}
+			}
+		}
+	}
+}
+.ribbon-scrroll-fixed {
+	position: fixed;
+	top: 0;
+	opacity: 0.99 !important;
+	z-index: 9999;
+}
+.v-align-center {
+	align-items: center;
+}
+.space-between {
+	justify-content: space-between;
+}
+/*******************\*
+	GROUP TEXT
+\*******************/
+.text-center {
+	text-align: center;
+}
+.ribbon-list a.icon {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+
+  .ribbon, .ribbon .ribbon-list {
+  	display: flex;
+  	flex-direction: column;
+	min-height: 60px;
+	background-color: $cor-principal;
+	width: 100%;
+  }
+  .ribbon-list a {
+  	display: none;
+  }
+  // Botao sanduich
+  .ribbon-list a.icon, .ribbon-list.responsive a.icon {
+    display: block;
+    float: left;
+    margin: 30px 0px 0px 30px;
+    color: $plano-fundo;
+  }
+  .ribbon-list.responsive a.icon {
+  	margin: 30px 0px 0px 30px;
+  	padding: 0;
+  }
+  // Lista ativa
+  .ribbon-list.responsive {
+  	margin: -10px 0 0 0;
+  	background-color: $cor-principal;
+  	width: 100%;
+  }
+  .ribbon-list.responsive a {
+  	display: block;
+    color: $plano-fundo;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 10px 0 10px 30px;
+    background-color: $cor-principal;
+    width: 100%;
+  }
+  .ribbon-list.responsive .ribbon-item {
+  	margin: 0;
+  	border: none;
+    padding: 0;
+  }
+}
