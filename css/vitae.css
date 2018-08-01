@@ -309,7 +309,7 @@ canvas {
 
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto Slab', sans-serif; }
 
 body {
   background-color: #EEE; }
@@ -493,8 +493,7 @@ em, i, strong, b {
         display: none; } }
 
 .ribbon {
-  background-image: url(../img/background.png);
-  opacity: 0.9; }
+  background-image: #6A358B; }
 
 .timeline {
   position: relative;
@@ -686,7 +685,16 @@ em, i, strong, b {
       display: inline;
       width: 215px;
       height: 215px;
-      overflow: hidden; } }
+      overflow: hidden;
+      margin-bottom: 50px; } }
+
+#sobre .ark p {
+  width: 75%;
+  font-size: 1.1em; }
+  #sobre .ark p .author {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #6A358B; }
 
 #experiencia .ark {
   background-color: #ddd; }

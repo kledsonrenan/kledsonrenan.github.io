@@ -1,6 +1,4 @@
-window.onscroll = function() {
-	scrollRibbon();
-}
+let $ = document.querySelector.bind(document);
 
 function scrollRibbon() {
 	let ribbon = document.querySelector('.ribbon');
@@ -14,12 +12,16 @@ function scrollRibbon() {
 	}
 };
 
-function menu() {
-    var x = document.querySelector('.ribbon-list');
+document.querySelector(".ribbon .ribbon-list .icon").addEventListener("click", function menu() {
+    let x = document.querySelector('.ribbon-list');
 
     if (x.className === 'ribbon-list') {
         x.classList.add('responsive');
     } else {
         x.classList.remove('responsive');
     }
+});
+
+window.onscroll = function() {
+	scrollRibbon();
 }

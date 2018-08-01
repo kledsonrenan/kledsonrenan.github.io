@@ -6,6 +6,17 @@
 		width: 215px;
 		height: 215px;
 		overflow: hidden;
+		margin-bottom: 50px;
+	}
+}
+#sobre .ark p {
+	width: 75%;
+	font-size: 1.1em;
+
+	.author {
+		text-decoration: underline;
+		text-decoration-style: wavy;
+		text-decoration-color: $cor-principal;
 	}
 }
 #experiencia .ark {
