@@ -1,7 +1,7 @@
 let $ = document.querySelector.bind(document);
 
 function scrollRibbon() {
-	let ribbon = document.querySelector('.ribbon');
+	let ribbon = $('.ribbon');
 	let k = ribbon.offsetTop;
 
 	if (window.pageYOffset > k) {
@@ -12,8 +12,8 @@ function scrollRibbon() {
 	}
 };
 
-document.querySelector(".ribbon .ribbon-list .icon").addEventListener("click", function menu() {
-    let x = document.querySelector('.ribbon-list');
+$(".ribbon .ribbon-list .icon").addEventListener("click", function menu() {
+    let x = $('.ribbon-list');
 
     if (x.className === 'ribbon-list') {
         x.classList.add('responsive');

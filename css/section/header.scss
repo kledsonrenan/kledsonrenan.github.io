@@ -5,6 +5,9 @@
 	
 	@media (max-width: 768px) {
 		padding: 10px;
+		.text-center {
+			margin: 0 auto;
+		}
 	}
 
 	.img-circle {
@@ -16,6 +19,7 @@
 
 		@media (max-width: 768px) {
 			display: none;
+			margin: 0 auto;
 		}
 	}
 }
