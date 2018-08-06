@@ -309,7 +309,7 @@ canvas {
 
 * {
   box-sizing: border-box;
-  font-family: 'Roboto Slab', sans-serif; }
+  font-family: 'Oswald', 'Roboto Slab', sans-serif; }
 
 body {
   background-color: #EEE; }
@@ -638,19 +638,19 @@ em, i, strong, b {
   width: 50%;
   background-color: #f90; }
 
-#contato {
+#contact {
   text-align: center; }
   @media (max-width: 768px) {
-    #contato .ark .content-15 {
+    #contact .ark .content-15 {
       text-align: center;
       flex-direction: column; } }
-  #contato .ark .content-15 i {
+  #contact .ark .content-15 i {
     font-size: 2.5em; }
-  #contato .ark .content-15 a {
+  #contact .ark .content-15 a {
     text-decoration: none; }
-    #contato .ark .content-15 a:link, #contato .ark .content-15 a:visited {
+    #contact .ark .content-15 a:link, #contact .ark .content-15 a:visited {
       color: #6A358B; }
-    #contato .ark .content-15 a:hover {
+    #contact .ark .content-15 a:hover {
       color: gray;
       transition: color 0.3s; }
 
@@ -691,18 +691,18 @@ em, i, strong, b {
       overflow: hidden;
       margin-bottom: 50px; } }
 
-#sobre .ark p {
+#about .ark p {
   width: 75%;
   font-size: 1.1em; }
-  #sobre .ark p .author {
+  #about .ark p .author {
     text-decoration: underline;
     text-decoration-style: wavy;
     text-decoration-color: #6A358B; }
 
-#experiencia .ark {
+#experience .ark {
   background-color: #ddd; }
 
-#habilidades .ark .tech {
+#skills .ark .tech {
   text-transform: uppercase; }
 
 .timeline .content p {

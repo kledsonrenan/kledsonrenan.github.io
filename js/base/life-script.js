@@ -1,7 +1,5 @@
-let $ = document.querySelector.bind(document);
-
 function scrollRibbon() {
-	let ribbon = $('.ribbon');
+	let ribbon = document.querySelector('.ribbon');
 	let k = ribbon.offsetTop;
 
 	if (window.pageYOffset > k) {
@@ -12,8 +10,8 @@ function scrollRibbon() {
 	}
 };
 
-$(".ribbon .ribbon-list .icon").addEventListener("click", function menu() {
-    let x = $('.ribbon-list');
+document.querySelector(".ribbon .ribbon-list .icon").addEventListener("click", function() {
+    let x = document.querySelector('.ribbon-list');
 
     if (x.className === 'ribbon-list') {
         x.classList.add('responsive');
@@ -25,3 +23,31 @@ $(".ribbon .ribbon-list .icon").addEventListener("click", function menu() {
 window.onscroll = function() {
 	scrollRibbon();
 }
+
+$(function() {
+	let timeout = 3500;
+	$('.ribbon-item #sobre').click(function() {
+		let x = $('#about').offset().top;
+		$('html,body').animate({scrollTop:x}, timeout);
+	});
+
+	$('.ribbon-item #experiencia').click(function() {
+		let x = $('#experience').offset().top;
+		$('html,body').animate({scrollTop:x}, timeout);
+	});
+
+	$('.ribbon-item #formacao').click(function() {
+		let x = $('#formation').offset().top;
+		$('html,body').animate({scrollTop:x}, timeout);
+	});
+
+	$('.ribbon-item #habilidade').click(function() {
+		let x = $('#skills').offset().top;
+		$('html,body').animate({scrollTop:x}, timeout);
+	});
+
+	$('.ribbon-item #contato').click(function() {
+		let x = $('#contact').offset().top;
+		$('html,body').animate({scrollTop:x}, timeout);
+	});
+});
