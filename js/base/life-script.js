@@ -26,27 +26,32 @@ window.onscroll = function() {
 
 $(function() {
 	let timeout = 3500;
-	$('.ribbon-item #sobre').click(function() {
+	$('.ribbon-item #sobre').click(function(e) {
+		e.preventDefault();
 		let x = $('#about').offset().top;
 		$('html,body').animate({scrollTop:x}, timeout, 'swing');
 	});
 
-	$('.ribbon-item #experiencia').click(function() {
+	$('.ribbon-item #experiencia').click(function(e) {
+		e.preventDefault();
 		let x = $('#experience').offset().top;
 		$('html,body').animate({scrollTop:x}, timeout, 'swing');
 	});
 
-	$('.ribbon-item #formacao').click(function() {
+	$('.ribbon-item #formacao').click(function(e) {
+		e.preventDefault();
 		let x = $('#formation').offset().top;
 		$('html,body').animate({scrollTop:x}, timeout, 'swing');
 	});
 
-	$('.ribbon-item #habilidade').click(function() {
+	$('.ribbon-item #habilidade').click(function(e) {
+		e.preventDefault();
 		let x = $('#skills').offset().top;
 		$('html,body').animate({scrollTop:x}, timeout, 'swing');
 	});
 
-	$('.ribbon-item #contato').click(function() {
+	$('.ribbon-item #contato').click(function(e) {
+		e.preventDefault();
 		let x = $('#contact').offset().top;
 		$('html,body').animate({scrollTop:x}, timeout, 'swing');
 	});
