@@ -693,14 +693,13 @@ em, i, strong, b {
 
 #about .ark p {
   width: 75%;
-  font-size: 1.1em; }
+  font-size: 1.35em;
+  font-weight: normal;
+  line-height: 2em; }
   #about .ark p .author {
     text-decoration: underline;
     text-decoration-style: wavy;
     text-decoration-color: #6A358B; }
-
-#experience .ark {
-  background-color: #ddd; }
 
 #skills .ark .tech {
   text-transform: uppercase; }
@@ -713,8 +712,6 @@ em, i, strong, b {
   text-transform: uppercase;
   font-size: 1.7em;
   margin: 0 0 50px 0; }
-.ark p {
-  line-height: 2em; }
 
 .parallax {
   background-image: url(../img/programming.png); }
