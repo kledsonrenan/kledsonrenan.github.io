@@ -696,10 +696,11 @@ em, i, strong, b {
   font-size: 1.35em;
   font-weight: normal;
   line-height: 2em; }
-  #about .ark p .author {
-    text-decoration: underline;
-    text-decoration-style: wavy;
-    text-decoration-color: #6A358B; }
+#about .ark ul {
+  list-style: circle;
+  margin-top: 5px; }
+  #about .ark ul li {
+    margin-top: 5px; }
 
 #skills .ark .tech {
   text-transform: uppercase; }

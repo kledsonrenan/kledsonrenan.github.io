@@ -9,16 +9,19 @@
 		margin-bottom: 50px;
 	}
 }
-#about .ark p {
-	width: 75%;
-	font-size: 1.35em;
-    font-weight: normal;
-    line-height: 2em;
-
-	.author {
-		text-decoration: underline;
-		text-decoration-style: wavy;
-		text-decoration-color: $cor-principal;
+#about .ark {
+	p {
+		width: 75%;
+		font-size: 1.35em;
+		font-weight: normal;
+		line-height: 2em;
+	}
+	ul {
+		list-style: circle;
+		margin-top: 5px;
+		li {
+			margin-top: 5px;
+		}
 	}
 }
 #skills .ark .tech {
