@@ -25,7 +25,7 @@ window.onscroll = () => {
 }
 
 $(() => {
-	let timeout = 3500;
+	let timeout = 3000;
 	$('.ribbon-item #sobre').click((e) => {
 		e.preventDefault();
 		let x = $('#about').offset().top;

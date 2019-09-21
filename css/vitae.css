@@ -309,7 +309,7 @@ canvas {
 
 * {
   box-sizing: border-box;
-  font-family: 'Oswald', 'Roboto Slab', sans-serif; }
+  font-family: 'Archivo Black', 'Saira', sans-serif;}
 
 body {
   background-color: #EEE; }
@@ -318,6 +318,10 @@ em, i, strong, b {
   font-style: normal;
   font-weight: normal;
   text-decoration: none; }
+
+  h3#prof {
+    font-family: 'Saira';
+  }
 
 .ark {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.27);
@@ -353,6 +357,7 @@ em, i, strong, b {
   overflow-y: hidden;
   background-color: black; }
   .footer .author {
+    font-family: 'Saira';
     color: #BBB; }
   .footer a:link {
     text-decoration: none; }
@@ -364,7 +369,6 @@ em, i, strong, b {
   display: flex;
   max-width: 100%;
   width: 100%;
-  background-color: #100219;
   overflow-x: hidden;
   overflow-y: hidden;
   height: 350px;
@@ -405,6 +409,7 @@ em, i, strong, b {
       background: none;
       text-transform: uppercase; }
       .ribbon .ribbon-list .ribbon-item a:link {
+        font-family: 'Saira';
         text-decoration: none;
         color: #D9BBF9;
         font-weight: 600; }
@@ -516,6 +521,16 @@ em, i, strong, b {
     position: relative;
     background-color: inherit;
     width: 50%; }
+    .timeline .container h2 {
+      font-family: 'Archivo Black';
+    }
+    .timeline .container h3 {
+      font-family: 'Saira';
+      font-weight: bold;
+    }
+    .timeline .container p {
+      font-family: 'Saira';
+    }
     .timeline .container::after {
       content: '';
       position: absolute;
@@ -587,16 +602,25 @@ em, i, strong, b {
 
   .timeline .content {
     word-wrap: break-word; } }
+
 .content-skill {
   width: 100%;
   background-color: #DDD;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.27); }
+
+  .content-skill .skills {
+  font-family: 'Saira';
+}
 
 .skills {
   text-align: right;
   padding-right: 20px;
   line-height: 20px;
   color: #FFF; }
+
+#skills .ark .tech {
+  font-family: 'Saira';
+  text-transform: uppercase; }
 
 .html {
   width: 90%;
@@ -640,6 +664,7 @@ em, i, strong, b {
 
 #contact {
   text-align: center; }
+
   @media (max-width: 768px) {
     #contact .ark .content-15 {
       text-align: center;
@@ -691,35 +716,43 @@ em, i, strong, b {
       overflow: hidden;
       margin-bottom: 50px; } }
 
+#about h1 {font-family: 'Saira'; font-weight: bold}
+
 #about .ark p {
   width: 75%;
-  font-size: 1.35em;
+  font-size: 1.25em;
+  font-family: 'Saira';
   font-weight: normal;
-  line-height: 2em; }
+  line-height: 2em; 
+  letter-spacing: 0.4pt}
 #about .ark ul {
   list-style: circle;
   margin-top: 5px; }
   #about .ark ul li {
     margin-top: 5px; }
 
-#skills .ark .tech {
-  text-transform: uppercase; }
-
 .timeline .content p {
   line-height: 2em; }
 
 .ark .title {
+  font-family: 'Saira';
+  font-weight: bold;
   color: #6A358B;
   text-transform: uppercase;
   font-size: 1.7em;
   margin: 0 0 50px 0; }
 
 .parallax {
-  background-image: url(../img/bgc-kdn.png); }
+  background-image: url(../img/bgc-kdn-2.png); }
   .parallax .title {
     color: #EEE;
     text-transform: uppercase;
     margin: 0 0 50px 0; }
+
+.parallax h1 {
+  font-family: 'Saira';
+  font-weight: bold;
+}
 
 .fa.fa-phone {
   display: none; }
