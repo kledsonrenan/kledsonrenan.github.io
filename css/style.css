@@ -1,0 +1,122 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,400;1,900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.section.apresentation {
+    background-color: #000;
+    height: 100vh;
+}
+#logo {
+    position: relative;
+    top: 42.5%;
+    left: 42.5%;
+    transform: translate(-42.55%, -42.5%);
+    animation: fill 0.5s ease forwards 3.5s;
+    max-width: 100%;
+}
+#logo path {
+    fill: transparent;
+}
+/* < */
+#logo path:nth-child(2) {
+    stroke-dasharray: 259;
+    stroke-dashoffset: 259;
+    animation: line-anim 2s ease forwards;
+}
+/* K */
+#logo path:nth-child(3) {
+    stroke-dasharray: 525;
+    stroke-dashoffset: 525;
+    animation: line-anim 2s ease forwards 0.3s;
+}
+/* L */
+#logo path:nth-child(4) {
+    stroke-dasharray: 328;
+    stroke-dashoffset: 328;
+    animation: line-anim 2s ease forwards 0.6s;
+}
+/* E */
+#logo path:nth-child(5) {
+    stroke-dasharray: 525;
+    stroke-dashoffset: 525;
+    animation: line-anim 2s ease forwards 0.9s;
+}
+/* D */
+#logo path:nth-child(6) {
+    stroke-dasharray: 742;
+    stroke-dashoffset: 542;
+    animation: line-anim 2s ease forwards 1.2s;
+}
+/* S */
+#logo path:nth-child(7) {
+    stroke-dasharray: 733;
+    stroke-dashoffset: 533;
+    animation: line-anim 2s ease forwards 1.5s;
+}
+/* O */
+#logo path:nth-child(8) {
+    stroke-dasharray: 527;
+    stroke-dashoffset: 527;
+    animation: line-anim 2s ease forwards 1.8s;
+}
+/* N */
+#logo path:nth-child(9) {
+    stroke-dasharray: 605;
+    stroke-dashoffset: 605;
+    animation: line-anim 2s ease forwards 2.1ms;
+}
+/* / */
+#logo path:nth-child(10) {
+    stroke-dasharray: 260;
+    stroke-dashoffset: 260;
+    animation: line-anim 2s ease forwards 2.4s;
+}
+/* > */
+#logo path:nth-child(11) {
+    stroke-dasharray: 268;
+    stroke-dashoffset: 268;
+    animation: line-anim 2s ease forwards 2.7s;
+}
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+    from {
+        fill: transparent;
+    }
+}
+@keyframes fill {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: white;
+    }
+}
+
+.message-header {
+    text-transform: uppercase;
+}
+
+.experiencias .message-body:hover {
+    border-left-color: #f14668;
+    transition: 0.5s border;
+}
+
+.navbar-start .navbar-item:hover {
+    border-bottom: solid 3px #f14668;
+    transition: 0.3s border;
+}
+
+.skills .is-7 {
+    text-transform: uppercase;
+}
+
+@media (max-width: 425px) {
+    .section.apresentation {
+        height: 50vh;
+    }
+}

@@ -2,217 +2,466 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
-    <meta name="author" content="Kledson Renan Sousa do Nascimento">
-    <meta name="keywords" content="Curriculum, Kledson Nascimento, Kledson Renan, Curriculum Web Kledson, GitHub Kledson, Curriculum Kledson GitHub">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <title>Kledson Renan</title>
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    <link rel="stylesheet" href="css/vitae.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Saira:400,700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header class="header flex v-align-center">
-        <div id="particles-js"></div>
-        <div class="count-particles">
-            <i class="js-count-particles"></i>
-        </div>
-
-        <div class="content-15 flex v-align-center space-between">
-            <img src="img/eu-circle.png" alt="Foto Kledson Renan" class="img-circle">
-
-            <div class="flex-column text-center" id="type-writer">
-                <h1>Kledson Nascimento</h1>
-                <h3 id="prof">&lt;&nbsp;Desenvolvedor Web&nbsp;/&nbsp;&gt;</h3>
-            </div>
-        </div>
-    </header>
-    <nav class="ribbon">
-        <ul class="ribbon-list">
-            <a class="icon">
-				<i class="fa fa-bars"></i>
-			</a>
-            <li class="ribbon-item"><a href="#" id="sobre">Sobre</a></li>
-            <li class="ribbon-item"><a href="#" id="formacao">Formação</a></li>
-            <li class="ribbon-item"><a href="#" id="habilidade">Habilidades</a></li>
-            <li class="ribbon-item"><a href="#" id="contato">Contatos</a></li>
-            <li class="ribbon-item"><a href="cv-online.html">Curriculo</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="about">
-            <div class="ark">
-                <div class="content-15 flex flex-column v-align-center space-between">
-                    <h1 class="title text-center">Sobre</h1>
-
-                    <img src="img/eu-circle.png" alt="Foto Kledson Renan" class="img-circle" id="img-mobile">
-
-                    <p>
-                        Olá, seja bem vindo, sou Kledson Renan!<br/>
-                        como você está? Espero que bem, fico feliz por ter chegado até aqui!!</p>
-                    <p>
-                        Bom, vamos falar sobre mim, já que é o principal motivo para esta página está funcionando!<br/>
-                    </p>
-                    <p>
-                        Sou estudante de Tecnologia da Informação, gosto de trabalhar com HTML, CSS, JS, PHP e MySQL, estou a procura de oportunidades na área, 
-                        afim de colocar em pratica o que aprendi e estou aprendendo não só durante o curso, mas também em comunidades, livros, amigos que já 
-                        atuam na área, palestras e outros meios de conhecimento.
-                    </p>
+    <section class="section apresentation">
+        <svg
+            id="logo"
+            width="940"
+            height="117"
+            viewBox="0 0 940 117"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <mask id="path-1-outside-1" maskUnits="userSpaceOnUse" x="0" y="0" width="940" height="117" fill="black">
+                <rect fill="white" width="940" height="117"/>
+                <path d="M15.5 60.5L59.5156 78.2891V92.0703L2 65.4219V55.1562L59.5156 28.5781V42.3594L15.5 60.5Z"/>
+                <path d="M143.82 58.1797L131.305 71.1875V105.781H117.805V3.40625H131.305V54.0312L176.797 3.40625H193.109L152.82 48.6172L196.273 105.781H180.102L143.82 58.1797Z"/>
+                <path d="M221.656 94.7422H270.172V105.781H208.086V3.40625H221.656V94.7422Z"/>
+                <path d="M343.438 58.4609H299.07V94.7422H350.609V105.781H285.57V3.40625H349.906V14.5156H299.07V47.4219H343.438V58.4609Z"/>
+                <path d="M367.414 105.781V3.40625H396.312C405.219 3.40625 413.094 5.375 419.938 9.3125C426.781 13.25 432.055 18.8516 435.758 26.1172C439.508 33.3828 441.406 41.7266 441.453 51.1484V57.6875C441.453 67.3438 439.578 75.8047 435.828 83.0703C432.125 90.3359 426.805 95.9141 419.867 99.8047C412.977 103.695 404.938 105.688 395.75 105.781H367.414ZM380.914 14.5156V94.7422H395.117C405.523 94.7422 413.609 91.5078 419.375 85.0391C425.188 78.5703 428.094 69.3594 428.094 57.4062V51.4297C428.094 39.8047 425.352 30.7812 419.867 24.3594C414.43 17.8906 406.695 14.6094 396.664 14.5156H380.914Z"/>
+                <path d="M492.078 60.1484C480.5 56.8203 472.062 52.7422 466.766 47.9141C461.516 43.0391 458.891 37.0391 458.891 29.9141C458.891 21.8516 462.102 15.1953 468.523 9.94531C474.992 4.64844 483.383 2 493.695 2C500.727 2 506.984 3.35938 512.469 6.07812C518 8.79688 522.266 12.5469 525.266 17.3281C528.312 22.1094 529.836 27.3359 529.836 33.0078H516.266C516.266 26.8203 514.297 21.9688 510.359 18.4531C506.422 14.8906 500.867 13.1094 493.695 13.1094C487.039 13.1094 481.836 14.5859 478.086 17.5391C474.383 20.4453 472.531 24.5 472.531 29.7031C472.531 33.875 474.289 37.4141 477.805 40.3203C481.367 43.1797 487.391 45.8047 495.875 48.1953C504.406 50.5859 511.062 53.2344 515.844 56.1406C520.672 59 524.234 62.3516 526.531 66.1953C528.875 70.0391 530.047 74.5625 530.047 79.7656C530.047 88.0625 526.812 94.7188 520.344 99.7344C513.875 104.703 505.227 107.188 494.398 107.188C487.367 107.188 480.805 105.852 474.711 103.18C468.617 100.461 463.906 96.7578 460.578 92.0703C457.297 87.3828 455.656 82.0625 455.656 76.1094H469.227C469.227 82.2969 471.5 87.1953 476.047 90.8047C480.641 94.3672 486.758 96.1484 494.398 96.1484C501.523 96.1484 506.984 94.6953 510.781 91.7891C514.578 88.8828 516.477 84.9219 516.477 79.9062C516.477 74.8906 514.719 71.0234 511.203 68.3047C507.688 65.5391 501.312 62.8203 492.078 60.1484Z"/>
+                <path d="M626.164 57.8984C626.164 67.9297 624.477 76.6953 621.102 84.1953C617.727 91.6484 612.945 97.3438 606.758 101.281C600.57 105.219 593.352 107.188 585.102 107.188C577.039 107.188 569.891 105.219 563.656 101.281C557.422 97.2969 552.57 91.6484 549.102 84.3359C545.68 76.9766 543.922 68.4688 543.828 58.8125V51.4297C543.828 41.5859 545.539 32.8906 548.961 25.3438C552.383 17.7969 557.211 12.0312 563.445 8.04688C569.727 4.01562 576.898 2 584.961 2C593.164 2 600.383 3.99219 606.617 7.97656C612.898 11.9141 617.727 17.6562 621.102 25.2031C624.477 32.7031 626.164 41.4453 626.164 51.4297V57.8984ZM612.734 51.2891C612.734 39.1484 610.297 29.8438 605.422 23.375C600.547 16.8594 593.727 13.6016 584.961 13.6016C576.43 13.6016 569.703 16.8594 564.781 23.375C559.906 29.8438 557.398 38.8438 557.258 50.375V57.8984C557.258 69.6641 559.719 78.9219 564.641 85.6719C569.609 92.375 576.43 95.7266 585.102 95.7266C593.82 95.7266 600.57 92.5625 605.352 86.2344C610.133 79.8594 612.594 70.7422 612.734 58.8828V51.2891Z"/>
+                <path d="M725.094 105.781H711.523L659.984 26.8906V105.781H646.414V3.40625H659.984L711.664 82.6484V3.40625H725.094V105.781Z"/>
+                <path d="M785.352 114.57H774.172L816.922 3.40625H828.031L785.352 114.57Z"/>
+                <path d="M923.867 60.0781L877.391 41.8672V28.5078L937.438 55.0859V65.3516L877.391 92V78.5L923.867 60.0781Z"/>
+            </mask>
+    
+            <path d="M15.5 60.5L59.5156 78.2891V92.0703L2 65.4219V55.1562L59.5156 28.5781V42.3594L15.5 60.5Z" stroke="#E3E3E3" stroke-width="4" mask="url(#path-1-outside-1)"/>
+            <path d="M143.82 58.1797L131.305 71.1875V105.781H117.805V3.40625H131.305V54.0312L176.797 3.40625H193.109L152.82 48.6172L196.273 105.781H180.102L143.82 58.1797Z" stroke="#E3E3E3" stroke-width="4" mask="url(#path-1-outside-1)"/>
+            <path d="M221.656 94.7422H270.172V105.781H208.086V3.40625H221.656V94.7422Z" stroke="#E3E3E3" stroke-width="4" mask="url(#path-1-outside-1)"/>
+            <path d="M343.438 58.4609H299.07V94.7422H350.609V105.781H285.57V3.40625H349.906V14.5156H299.07V47.4219H343.438V58.4609Z" stroke="#E3E3E3" stroke-width="4" mask="url(#path-1-outside-1)"/>
+            <path d="M367.414 105.781V3.40625H396.312C405.219 3.40625 413.094 5.375 419.938 9.3125C426.781 13.25 432.055 18.8516 435.758 26.1172C439.508 33.3828 441.406 41.7266 441.453 51.1484V57.6875C441.453 67.3438 439.578 75.8047 435.828 83.0703C432.125 90.3359 426.805 95.9141 419.867 99.8047C412.977 103.695 404.938 105.688 395.75 105.781H367.414ZM380.914 14.5156V94.7422H395.117C405.523 94.7422 413.609 91.5078 419.375 85.0391C425.188 78.5703 428.094 69.3594 428.094 57.4062V51.4297C428.094 39.8047 425.352 30.7812 419.867 24.3594C414.43 17.8906 406.695 14.6094 396.664 14.5156H380.914Z" stroke="#E3E3E3" stroke-width="4" mask="url(#path-1-outside-1)"/>
+            <path d="M492.078 60.1484C480.5 56.8203 472.062 52.7422 466.766 47.9141C461.516 43.0391 458.891 37.0391 458.891 29.9141C458.891 21.8516 462.102 15.1953 468.523 9.94531C474.992 4.64844 483.383 2 493.695 2C500.727 2 506.984 3.35938 512.469 6.07812C518 8.79688 522.266 12.5469 525.266 17.3281C528.312 22.1094 529.836 27.3359 529.836 33.0078H516.266C516.266 26.8203 514.297 21.9688 510.359 18.4531C506.422 14.8906 500.867 13.1094 493.695 13.1094C487.039 13.1094 481.836 14.5859 478.086 17.5391C474.383 20.4453 472.531 24.5 472.531 29.7031C472.531 33.875 474.289 37.4141 477.805 40.3203C481.367 43.1797 487.391 45.8047 495.875 48.1953C504.406 50.5859 511.062 53.2344 515.844 56.1406C520.672 59 524.234 62.3516 526.531 66.1953C528.875 70.0391 530.047 74.5625 530.047 79.7656C530.047 88.0625 526.812 94.7188 520.344 99.7344C513.875 104.703 505.227 107.188 494.398 107.188C487.367 107.188 480.805 105.852 474.711 103.18C468.617 100.461 463.906 96.7578 460.578 92.0703C457.297 87.3828 455.656 82.0625 455.656 76.1094H469.227C469.227 82.2969 471.5 87.1953 476.047 90.8047C480.641 94.3672 486.758 96.1484 494.398 96.1484C501.523 96.1484 506.984 94.6953 510.781 91.7891C514.578 88.8828 516.477 84.9219 516.477 79.9062C516.477 74.8906 514.719 71.0234 511.203 68.3047C507.688 65.5391 501.312 62.8203 492.078 60.1484Z" stroke="#E3E3E3" stroke-width="4" mask="url(#path-1-outside-1)"/>
+            <path d="M626.164 57.8984C626.164 67.9297 624.477 76.6953 621.102 84.1953C617.727 91.6484 612.945 97.3438 606.758 101.281C600.57 105.219 593.352 107.188 585.102 107.188C577.039 107.188 569.891 105.219 563.656 101.281C557.422 97.2969 552.57 91.6484 549.102 84.3359C545.68 76.9766 543.922 68.4688 543.828 58.8125V51.4297C543.828 41.5859 545.539 32.8906 548.961 25.3438C552.383 17.7969 557.211 12.0312 563.445 8.04688C569.727 4.01562 576.898 2 584.961 2C593.164 2 600.383 3.99219 606.617 7.97656C612.898 11.9141 617.727 17.6562 621.102 25.2031C624.477 32.7031 626.164 41.4453 626.164 51.4297V57.8984ZM612.734 51.2891C612.734 39.1484 610.297 29.8438 605.422 23.375C600.547 16.8594 593.727 13.6016 584.961 13.6016C576.43 13.6016 569.703 16.8594 564.781 23.375C559.906 29.8438 557.398 38.8438 557.258 50.375V57.8984C557.258 69.6641 559.719 78.9219 564.641 85.6719C569.609 92.375 576.43 95.7266 585.102 95.7266C593.82 95.7266 600.57 92.5625 605.352 86.2344C610.133 79.8594 612.594 70.7422 612.734 58.8828V51.2891Z" stroke="#E3E3E3" stroke-width="4" mask="url(#path-1-outside-1)"/>
+            <path d="M725.094 105.781H711.523L659.984 26.8906V105.781H646.414V3.40625H659.984L711.664 82.6484V3.40625H725.094V105.781Z" stroke="#E3E3E3" stroke-width="4" mask="url(#path-1-outside-1)"/>
+            <path d="M785.352 114.57H774.172L816.922 3.40625H828.031L785.352 114.57Z" stroke="#E3E3E3" stroke-width="4" mask="url(#path-1-outside-1)"/>
+            <path d="M923.867 60.0781L877.391 41.8672V28.5078L937.438 55.0859V65.3516L877.391 92V78.5L923.867 60.0781Z" stroke="#E3E3E3" stroke-width="4" mask="url(#path-1-outside-1)"/>
+        </svg>
+    </section>
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar is-dark">
+            <!-- LEFT -->
+            <div class="navbar-brand">
+                <a href="index.html" class="navbar-item">
+                    <span class="tag is-danger is-5"> < Kledson Renan / > </span>
+                </a>
+    
+                <div class="navbar-burguer" data-target="navbaritens">
+                    <span></span><span></span><span></span>
                 </div>
             </div>
-        </section>
-        <section id="formation">
-            <div class="parallax">
-                <h1 class="title text-center">Formação</h1>
-                <div class="timeline">
-                    <div class="container left">
-                        <div class="content">
-                            <h2>2019.2</h2>
-                            <h3>Estácio de Sá - Analise e desenvolvimento de Sistemas</h3>
-                            <p>Início no ensino superior</p>
+            <div id="navbaritens" class="navbar-menu">
+                <div class="navbar-start">
+                    <a href="depoimentos.html" class="navbar-item">Depoimentos</a>
+                    <a href="projetos.html" class="navbar-item">Projetos</a>
+                </div>
+                <!-- RIGHT -->
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                      <div class="field is-grouped">
+                        <!-- ITEM 1 -->
+                        <p class="control">
+                          <a class="bd-tw-button button" data-social-network="Github" data-social-action="github" target="_blank" href="https://github.com/kledsonrenan">
+                            <span class="icon">
+                              <i class="fab fa-github"></i>
+                            </span>
+                            <span>
+                              Github
+                            </span>
+                          </a>
+                        </p>
+                        <!-- ITEM 2 -->
+                        <p class="control">
+                          <a class="button is-danger" href="assets/CV - Kledson Nascimento.pdf">
+                            <span class="icon">
+                              <i class="fas fa-download"></i>
+                            </span>
+                            <span>Currículo</span>
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section main">
+        <div class="container">
+            <!--
+                CONTENT MAIN
+            -->
+            <div class="columns">
+               <div class="column">
+                   <!--
+                        CARD LATERAL
+                    -->
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image">
+                                        <img src="assets/eu-96.png" alt="Imagem do autor" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">Kledson Renan</p>
+                                    <p class="subtitle is-6">@kledsonrenan</p>
+                                </div>
+                            </div>
+                        
+                            <div class="content">
+                                <span class="tag is-dark is-medium">
+                                    Javascript Full Stack Developer
+                                </span>
+                                <hr>
+                                <!--
+                                    CONTATO
+                                -->
+                                <section class="contato">
+                                    <p>
+                                        <a href="https://t.me/kledsonrenan">
+                                            <span class="fab fa-telegram"></span> 
+                                            t.me/kledsonrenan
+                                        </a>
+                                    <p>
+                                        <a href="mailto:kledson.renan27@gmail.com">
+                                            <span class="fa fa-at"></span> 
+                                            kledson.renan27
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a href="https://www.linkedin.com/in/kledson-renan">
+                                            <span class="fab fa-linkedin"></span> 
+                                            in/kledson-renan
+                                        </a>
+                                    </p>
+                                </section>
+                                <hr>
+                                <!--
+                                    HABILIDADES
+                                -->
+                                <section class="skills">
+                                    <p class="title is-5 habilidades">Habilidades</p>
+
+                                    <span class="title is-7">Python</span>
+                                    <progress class="progress is-normal" value="70" max="100"><span>70%</span></progress>
+                                    
+                                    <span class="title is-7">Html e Css</span>
+                                    <progress class="progress is-normal" value="70" max="100"></progress>
+
+                                    <span class="title is-7">JQuery</span>
+                                    <progress class="progress is-normal" value="75" max="100">75%</progress>
+
+                                    <span class="title is-7">React</span>
+                                    <progress class="progress is-normal" value="80" max="100">80%</progress>
+
+                                    <span class="title is-7">Js</span>
+                                    <progress class="progress is-normal" value="85" max="100">85%</progress>
+
+                                    <span class="title is-7">Bootstrap / Bulma / Materialize</span>
+                                    <progress class="progress is-normal" value="75" max="100">75%</progress>
+
+                                    <span class="title is-7">Git</span>
+                                    <progress class="progress is-normal" value="60" max="100">60%</progress>
+
+                                    <span class="title is-7">Php</span>
+                                    <progress class="progress is-normal" value="65" max="100">65%</progress>
+
+                                    <span class="title is-7">Sass</span>
+                                    <progress class="progress is-normal" value="80" max="100">80%</progress>
+
+                                    <span class="title is-7">Java</span>
+                                    <progress class="progress is-normal" value="75" max="100">75%</progress>
+                                    
+                                    <span class="title is-7">Delphi</span>
+                                    <progress class="progress is-normal" value="50" max="100">50%</progress>
+                                </section>
+                            </div>
                         </div>
                     </div>
-                    <div class="container right">
-                        <div class="content">
-                            <h2>2018.2</h2>
-                            <h3>UFRN Curso Técnico - Conclusão</h3>
+               </div>
+                <!--
+                    INFORMAÇÕES
+                -->
+               <div class="column is-9">
+                    <article class="message">
+                        <div class="message-header">
+                            <p>Sobre mim</p>
+                        </div>
+                        <div class="message-body">
                             <p>
-                                Em 2018.2 eu chego ao término do curso técnico de Tecnologia da Informação com ênfase em Desenvolvimento Web pelo IMD Instituto Metrópole Digital UFRN.
+                                Me chamo Kledson Renan, sou aluno do curso de Análise e Desenvolvimento de Sistemas na Estácio. Sou Natural de Natal / RN, saí de meu lugar quente e aconchegante para Brasilia em busca de novas oportunidades.
+                            </p>
+                            <br>
+                            <p>
+                                Sou apaixonado por Desenvolvimento, Gosto muito de desenvolvimento WEB, nos ultimos dias, tenho feito alguns projetos para Desk para fornecer suporte a empresa onde trabalho atualmente.
+                            </p>
+                            <br>
+                            <p>
+                                Aprendi meus primeiros códigos quando tinha 18 anos, terminei o ensino médio um pouco tarde, comum acontecer entre os alunos de baixa renda daquela região. Pois muitas vezes devem escolher entre estudar e trabalhar dia e noite para ajudar a familia em manter o que comer e pagar as contas.
+                            </p>
+                            <br>
+                            <p>
+                                No entanto, não é sobre isso que estou aqui.
+                            Logo após aprender alguns códigos em Linguagem C, criava vários algoritmos para resolver os problemas matemáticos no ensino médio.
+                            </p>
+                            <br>
+                            <p>
+                                Pra falar nisso, recebi certificado de mensão honrosa na OBMEP(Olimpiadas Brasileiras de Matemática das Escolas Públicas) durante o fim do ensino médio.
+                            </p>
+                            <br>
+                            <p>
+                                Apliquei aulas de Matemática durante a ausencia do professor por precisar se afastar, tudo isso com acompanhamento da diretora da escola que também era professora de Matemática.
+                            </p>
+                            <br>
+                            <p>
+                                Aí esta uma breve e curta história a meu respeito.
+                            </p>
+                            <br>
+                            <p>
+                                Para me conhecer melhor, acho melhor entrar em contato visse!
                             </p>
                         </div>
-                    </div>
-                    <div class="container left">
-                        <div class="content">
-                            <h2>2017.2</h2>
-                            <h3>Ensino Médio</h3>
-                            <p>Conclusão do Ensino médio</p>
+                    </article>
+                    <hr>
+
+                    <!--
+                        SECTION FORMAÇÃO
+                    -->
+                    <article class="message">
+                        <div class="message-header">
+                            <p>Formação e Cursos Rápidos</p>
                         </div>
-                    </div>
-                    <div class="container right">
-                        <div class="content">
-                            <h2>2017.1</h2>
-                            <h3>Microlins - Designer Gráfico - Conclusão</h3>
-                            <p>Conclusão do Curso Profissionalizante de Designer Gráfico pela Microlins</p>
+                        <div class="message-body">
+                            <div class="columns">
+                                <section class="formacao column">
+                                    <div class="columns">
+                                        <div class="column">
+                                            <figure class="image is-128x128">
+                                                <img class="is-rounded" src="assets/ufrn.png" alt="Logo da UFRN">
+                                            </figure>
+                                        </div>
+                                        <div class="column right is-8">
+                                            <p class="title is-5">
+                                                Programação para Web
+                                                <span class="tag is-dark">
+                                                    UFRN / Técnico
+                                                </span>
+                                            </p>
+                                            <p>
+                                                No dia da prova foi tenso, eu tremia mais que corda de violão, não era normal.
+                                            </p>
+                                            <br>
+                                            <p>
+                                                No entanto, parece controlversia, mas estava confiante, era poucas vagas, não me recordo agora, para muitos candidatos e haviam pessoas de escolas particulares também concorrendo a vagas, ainda assim, lembro que falei para uma pessoa ao comentar que estava concorrido: Bom, vocês iram concorrer a (vagas ofertadas -1) pois uma é minha e ninguem tira.
+                                            </p>
+                                            <br>
+                                            <p>
+                                                Para minha mãe, isso era um sonho saber que entraria na UFRN, IMD(Instituto Metrópole Digital). Afinal, eu era o único dos irmãos que estava levando a sério os estudos e a programação.
+                                            </p>
+                                            <br>
+                                            <p>
+                                                Após a prova, um dúvida, ou estava de fato, muito fácil, ou errei quase tudo. rsrsrs
+                                            </p>
+                                            <br>
+                                            <p>
+                                                No dia de sair o resultado, lembro de minha mãe deitada no quarto com meu padrasto assistindo, e eu olhando lentamente o PDF com os nomes dos aprovados, quando chegou na letra K na ordem alfabetica, quase enfartei, achando que meu nome não estaria na lista.
+                                            </p>
+                                            <br>
+                                            <p>
+                                                Após 3 minutos lendo lentamente, lá estava escrito: Kledson Renan Sousa do Nascimento. A lágrima rolou e entrei no quarto chorando dizendo: Mãe? E ela achando que eu daria uma noticia triste, falou: Não fique assim não...
+                                                Enterrompi dizendo: EU PASSEI MÃE, EU PASSEI!
+                                            </p>
+                                            <br>
+                                            <p>
+                                                Naquele momento eu sabia que iria precisar estudar muito para conseguir chegar até o fim do curso, pois muitos desistem após as primeiras provas. Mas naquele momento o que eu queria era gritar pra rua inteira ouvir, EU PASSEI P@rr@. E foi o que eu fiz, só os vizinhos saindo pra fora para ver o que havia acontecido.
+                                            </p>
+                                            <br>
+                                            <p>
+                                                Paguei disciplinas como:
+                                                JAVA, JAVA WEB, Banco de Dados, Matemática, Inglês Técnico I e II, POO e entre outras.
+                                            </p>
+                                            <br>
+                                            <p>
+                                                Por problemas de saúde e hospitalizado, não consegui finalizar o documento para receber o certificado do Curso.O que até hoje me deixa triste. Ficando apenas com os certificados de cada módulo no decorrer do curso.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    
+                                    <div class="columns">
+                                        <div class="column left">
+                                            <figure class="image is-128x128">
+                                                <img class="is-rounded" src="assets/estacio.jpg" alt="Logo da Estácio">
+                                            </figure>
+                                        </div>
+                                        <div class="column right is-8">
+                                            <p class="title is-5">
+                                                Análise e Desenvolvimento de Sistemas
+                                                <span class="tag is-dark">
+                                                    Estácio / Superior
+                                                </span>
+                                            </p>
+                                            <p>
+                                                Após sair de um estágio a qual me ensinou muito e tenho saudade até hoje, onde aprendi com os melhores que convivi até hoje, e suguei conhecimento o maximo que pude. Fiquei um tempo distante do computador, pois agora não havia mais condições, notebook quebrou, não tinha mais dinheiro para concertar e havia me casado e estava trabalhando para meu sogro, não havia mais condições de pagar um curso superior.
+                                            </p>
+                                            <br>
+                                            <p>
+                                                Foi quando eu decidi encarar, após varias pessoas me dizerem o quanto eu era capaz e tinha talento para o que fazia.
+                                            </p>
+                                            <br>
+                                            <p>
+                                                Então me inscrevi no Curso citado acima e comecei a estudar novamente.
+                                            </p>
+                                            <br>
+                                            <p>
+                                                Após um periodo tive que fechar matricula para voltar posteriormente, desde então, fiquei durante anos sem programar ou escrever um código sequer.
+                                            </p>
+                                            <br>
+                                            <p>
+                                                Hoje, morando em brasilia, cheguei aqui e dois meses depois foi decretado pandemia, ninguém sai de casa sem mascara ou sera multado.
+                                            </p>
+                                            <br>
+                                            <p>
+                                                Morando de favor com minha irmã, cunhado, eu e esposa, a cituação não das melhores, achei que iria chegar em brasilia e iria chover horrores de oportunidades de emprego, estava aceitando qualquer coisa.
+                                            </p>
+                                            <br>
+                                            <p>
+                                                Após um periodo de quase um ano desempregado, fui chamado para uma entrevista de emprego que em momento algum, lembro de ter enviado curriculo para essa empresa.
+                                            </p>
+                                            <br>
+                                            <p>
+                                                Ok, fui aprovado!
+                                            </p>
+                                            <br>
+                                            <p>
+                                                Pulando muitos detalhes, após um tempo, a empresa se oferece para voltar a estudar e pagar minha faculdade. Claro, aceitei.
+                                            </p>
+                                            <br>
+                                            <p>
+                                                Estou cursando até o presente momento.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <hr>
+
+                                    <div class="columns">
+                                        <div class="column left">
+                                            <figure class="image is-128x128">
+                                                <img class="is-rounded" src="assets/microlins.jpg" alt="Logo da Microlins">
+                                            </figure>
+                                        </div>
+                                        <div class="column right is-8">
+                                            <p class="title is-5">
+                                                Designer Gráfico
+                                                <span class="tag is-dark">
+                                                    Microlins / Profissionalizante
+                                                </span>
+                                            </p>
+                                            <p>
+                                                Lembro de ter recebido uma "Bolsa" deles, que minha mãe havia se interessado em pagar para mim, pois havia prometido ao menos 3 entrevistas de emprego para trabalhar nessa Área, ok, compramos, Tive durante uma entrevista, passei, mas não era para trabalhar com Designer.
+                                            </p>
+                                            <br>
+                                            <p>
+                                                Embora nunca tenha trabalhado, me ajudou muito a conhecer as ferramentas da Adobe e um pouco de programação em Flash.
+                                            </p>
+                                            <br>
+                                            <p>
+                                                Vi ferramentas como:
+                                                Photoshop CS5, Illustrator CS5, DreamWeaver CS5 e Flash
+                                            </p>
+                                            <br>
+                                            <p>
+                                                Não consigo fazer muita coisa, mas a curva de aprendizado sempre foi muito curta.
+                                            </p>
+                                            <br>
+                                            <p>
+                                                Me ajudou durante o estágio no TJRN a projetar e desenvolver telas.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
                         </div>
-                    </div>
+                    </article>
+                    <hr>
+
+                    <!--
+                        SECTION EXPERIENCIAS
+                    -->
+                    <article class="message experiencias">
+                        <div class="message-header">
+                            <p>Experiencias</p>
+                        </div>
+                        <hr>
+                        <div class="message-body">
+                            <p class="title is-5">
+                                TJRN (Tribunal de Justiça do Rio Grande do Norte) - Estágio
+                            </p>
+                            <p>
+                                Caso tenha lido os textos anteriores, saberá que aqui foi a melhor experiencia que já tive em minha vida, como desenvolvedor, visão de negócio, processos, rotinas de trablho.
+                            </p>
+                            <br>
+                            <p>
+                                Enfim, foi aqui que conheci pessoas importantes para meu crescimento, amadurecimento, tanto profissional quanto pessoal, pessoas que até hoje estão presente em minha vida, que até hoje me inspiram em vida, e mesmo após partir, a admiração ainda continua cada vez que as memorias são ativadas.
+                            </p>
+                            <br>
+                            <p>
+                                Sou grato por tudo que vivi durante o estágio naquele lugar.
+                            </p>
+                            <br>
+                            <p>
+                                Foi muita mão na massa, tanto na área de TIC (Tecnologia da Informação e Comunicação) quanto na área da Justiça.
+                            </p>
+                            <br>
+                            <p>
+                                Desempenhei trabalhos como:
+                                Desenho e codificação de telas para Sistemas Web, utilizando Photoshop, Illustrator, HTML, CSS, JS, JQuery e PHP, Desenvovlimento JAVA para WEB com PrimeFaces e JPA, Cadastro de Processos Juridicos nas plataformas, Suporte Técnologico aos setores dentro do Tribunal, Melhoria e desenvolvimento de planilhas Excel, Participação de Reuniões para novos projetos de desenvolvimento.
+                            </p>
+                        </div>
+                        <hr>
+
+                        <div class="message-body">
+                            <p class="title is-5">
+                                Experiencia
+                            </p>
+                            <p>
+                                Olá, seja bem vindo, sou Kledson Renan!
+                                como você está? Espero que bem, fico feliz por ter chegado até aqui!!
+                                
+                                Bom, vamos falar sobre mim, já que é o principal motivo para esta página está funcionando!
+                                Sou estudante de Tecnologia da Informação, gosto de trabalhar com HTML, CSS, JS, PHP e MySQL, estou a procura de oportunidades na área, afim de colocar em pratica o que aprendi e estou aprendendo não só durante o curso, mas também em comunidades, livros, amigos que já atuam na área, palestras e outros meios de conhecimento.
+                            </p>
+                        </div>
+                        <hr>
+
+                        <div class="message-body">
+                            <p class="title is-5">
+                                Experiencia
+                            </p>
+                            <p>
+                                Olá, seja bem vindo, sou Kledson Renan!
+                                como você está? Espero que bem, fico feliz por ter chegado até aqui!!
+                                
+                                Bom, vamos falar sobre mim, já que é o principal motivo para esta página está funcionando!
+                                Sou estudante de Tecnologia da Informação, gosto de trabalhar com HTML, CSS, JS, PHP e MySQL, estou a procura de oportunidades na área, afim de colocar em pratica o que aprendi e estou aprendendo não só durante o curso, mas também em comunidades, livros, amigos que já atuam na área, palestras e outros meios de conhecimento.
+                            </p>
+                        </div>
+                        <hr>
+                    </article>
                 </div>
-            </div>
-        </section>
-
-        <section id="skills">
-            <div class="ark">
-                <div class="flex flex-column v-align-center space-between">
-                    <h1 class="title">Habilidades</h1>
-                    <div class="content-15">
-                        <p class="tech">HTML</p>
-                        <div class="content-skill">
-                            <div class="skills html">90%</div>
-                        </div>
-
-                        <p class="tech">CSS</p>
-                        <div class="content-skill">
-                            <div class="skills css">85%</div>
-                        </div>
-
-                        <p class="tech">Sass</p>
-                        <div class="content-skill">
-                            <div class="skills sass">80%</div>
-                        </div>
-
-                        <p class="tech">Boostrap</p>
-                        <div class="content-skill">
-                            <div class="skills bootstrap">75%</div>
-                        </div>
-
-                        <p class="tech">JavaScript</p>
-                        <div class="content-skill">
-                            <div class="skills js">70%</div>
-                        </div>
-
-                        <p class="tech">PHP</p>
-                        <div class="content-skill">
-                            <div class="skills php">65%</div>
-                        </div>
-
-                        <p class="tech">Java</p>
-                        <div class="content-skill">
-                            <div class="skills java">65%</div>
-                        </div>
-
-                        <p class="tech">Jquery</p>
-                        <div class="content-skill">
-                            <div class="skills jquery">60%</div>
-                        </div>
-
-                        <p class="tech">SQL</p>
-                        <div class="content-skill">
-                            <div class="skills sql">60%</div>
-                        </div>
-
-                        <p class="tech">Linux</p>
-                        <div class="content-skill">
-                            <div class="skills linux">50%</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <div class="ark">
-                <h1 class="title text-center">Contatos</h1>
-                <div class="content-15 flex space-between v-align-center">
-                    <div class="git flex-column">
-                        <i class="fab fa-github text-center"></i>
-                        <p>
-                            <a href="https://github.com/kledsonrenan" target="_blank">github.com/kledsonrenan</a>
-                        </p>
-                    </div>
-
-                    <div class="linkedin flex-column">
-                        <i class="fab fa-linkedin text-center"></i>
-                        <p>
-                            <a href="https://www.linkedin.com/in/kledson-renan/" target="_blank">linkedin.com/in/kledson-renan</a>
-                        </p>
-                    </div>
-
-                    <div class="facebook flex-column">
-                        <i class="fab fa-facebook text-center"></i>
-                        <p>
-                            <a href="https://www.facebook.com/kledson.renan" target="_blank">facebook.com/kledson.renan</a>
-                        </p>
-                    </div>
-
-                    <div class="email flex-column">
-                        <i class="fa fa-at text-center"></i>
-                        <p>
-                            <a href="mailto:kledson.renan27@gmail.com">kledson.renan27@gmail.com</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="content-15 v-align-center space-between">
-            <span class="author">Kledson Nascimento</span>
-
-            <div class="social">
-                <a href="https://github.com/kledsonrenan" target="_blank" class="fab fa-github"></a>
-
-                <a href="https://www.linkedin.com/in/kledson-renan/" target="_blank" class="fab fa-linkedin"></a>
-
-                <a href="mailto:kledson.renan27@gmail.com" class="fa fa-at"></a>
-
-                <a href="tel:84988886753" class="fa fa-phone"></a>
             </div>
         </div>
-    </footer>
+    </section>
     <script src="js/vendor/jquery/jquery.min.js"></script>
-    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-    <script src="js/vendor/particles/particles.min.js"></script>
-    <script src="js/vendor/particles/particles.js"></script>
-    <script src="js/base/life-script.js"></script>
 </body>
 </html>
